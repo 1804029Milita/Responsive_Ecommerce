@@ -98,6 +98,8 @@ header li>a{
     display: flex;
     position: relative;
     line-height: inherit;
+    
+    transition: gray;
 
 }
 .header-top .wrapper{
@@ -120,6 +122,7 @@ header li>a{
     background-color: white;
     border: 1px solid gray;
     z-index: 1;
+    display: none;
 
 }
 .header-top .right ul ul li a{
@@ -128,6 +131,10 @@ header li>a{
 }
 .header-top .right ul ul .current a{
     background-color: var(--border-color);
+}
+.header-top li:hover ul{
+    display: block;
+
 }
 
 
